@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+   width: 2px;
+}
+button{
+    padding: 2px 8px!important;
+}
+body{
+    background-image: url('./assets/workFormBack.jpg');
+    background-size: contain;
+}
+.container{
+    
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 200px;
+}
+.work-form{
+    backdrop-filter:blur(40px);
+    background-color: rgba(255, 255, 255, 0.059);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 50px;
+    border-radius: 8px;
+    height: fit-content;
+}
+.work-form input {
+    scale: 1.1;
+    font-size: 1.05rem;
+    padding: 6px;
+    border: 1px solid goldenrod;
+    border-radius: 4px ;
+    color: aqua;
+}
+.workList{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 12px 22px;
+    box-shadow: 0px 0px 2px #cacaca;
+    border-radius: 8px;
+    background-color: tan;
+    width: 500px;
+    height: 400px;
+    overflow: auto;
+    row-gap: 10px;
+}
+.list-header {
+    min-height: 70px;
+    overflow: auto;
+    box-shadow: 0px 0px 2px #212121;
+    border-radius: 4px;
+    padding: 1px 20px;   
+    color: #212121;
+    background-color: #e6dede;
+}
+.list-header p {
+    text-decoration: overline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.list-header-btn{
+    display: flex;
+    justify-content: space-between;
+    font-size:0.8rem;
+}
+button:focus{
+    outline: none;
+    box-shadow: none;
+}
+ul{
+    list-style: none;
+}
+.list-item {
+    background-color: rgb(229, 200, 161);
+    padding : 8px;
+    border-radius: 12px;
+    margin-block:8px;
+}
+.list-item p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: blue;
+    font-weight: bold;
+}
+.list-item div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;;
+}
+.task-fnc{
+    background-color: #212121;
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
